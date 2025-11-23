@@ -1,0 +1,243 @@
+/* -----------------------------------------
+   PIRANA GLOBAL THEME
+   Colors: Black, Electric Cyan, Inferno Red
+   ----------------------------------------- */
+
+:root {
+  --black: #000000;
+  --bg-dark: #050505;
+  --cyan: #00E6FF;
+  --red: #FF1A2A;
+  --glass: rgba(255, 255, 255, 0.06);
+  --text-light: #EAFBFF;
+  --muted: #8899A6;
+  --radius: 12px;
+  --max-width: 1100px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+  background: var(--black);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* HEADER */
+header {
+  background: var(--black);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-brand span {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  background: var(--glass);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  color: var(--cyan);
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  margin-right: 12px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--cyan), var(--red));
+  color: var(--black);
+}
+
+.btn-outline {
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+}
+
+/* SECTIONS */
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--cyan);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--glass);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.card h3 {
+  color: var(--cyan);
+  margin-bottom: 10px;
+}
+
+/* FOUNDER CARD */
+.founder {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.founder img {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius);
+  border: 2px solid var(--glass);
+}
+
+/* CONTACT FORM */
+form {
+  max-width: 600px;
+  display: grid;
+  gap: 10px;
+}
+
+input, textarea {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 12px;
+  color: var(--text-light);
+  border-radius: var(--radius);
+}
+
+/* FOOTER */
+footer {
+  background: var(--bg-dark);
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer .footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer ul li {
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer h4 {
+  font-size: 18px;
+  color: var(--cyan);
+}
+
+footer p {
+  color: var(--muted);
+}
+
+.bottom-note {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
