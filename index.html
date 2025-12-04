@@ -3,91 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIRANA | Born To Outperform</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PIRANA | Official Website</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            background: #0f0f0f;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav h2 {
+            color: #fff;
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+        /* Hero Section */
+        #hero {
+            padding: 120px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom right, #061a33, #0f0f0f);
+            color: #fff;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        #hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            opacity: 0.85;
+        }
+
+        .btn-primary {
+            padding: 14px 28px;
+            background: #1a73e8;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #1663ca;
+        }
+
+        /* About Section */
+        #about {
+            padding: 70px 40px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* Social Section */
+        #contact {
+            padding: 70px 20px;
+            text-align: center;
+            background: #f5f7fa;
+        }
+
+        #contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons img {
+            width: 45px;
+            margin: 12px;
+            transition: 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px;
+            background: #0f0f0f;
+            color: #fff;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="container navbar">
-        <div class="nav-brand">
-            <img src="assets/logo.png" alt="PIRANA Logo">
-            <span>PIRANA</span>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero container">
-    <div class="hero-text">
-        <h1>Accelerating Intelligence. Redefining Performance.</h1>
-        <p>PIRANA is a next-generation global technology powerhouse building premium AI systems, automation platforms, and futuristic digital solutions.</p>
-
-        <a href="services.html" class="btn btn-primary">Explore Services</a>
-        <a href="careers.html" class="btn btn-outline">Join Us</a>
-    </div>
-
-    <div class="hero-image">
-        <img src="assets/logo.png" width="250">
-    </div>
-</section>
-
-<!-- FEATURES -->
-<section class="container">
-    <h2>Why PIRANA?</h2>
-    <div class="card-grid">
-        <div class="card">
-            <h3>Cutting-Edge Innovation</h3>
-            <p>Advanced AI-driven capabilities built with global-grade performance benchmarks.</p>
-        </div>
-
-        <div class="card">
-            <h3>Elite Engineering</h3>
-            <p>We craft systems that challenge industry giants with unmatched precision and speed.</p>
-        </div>
-
-        <div class="card">
-            <h3>Global Mindset</h3>
-            <p>Built for worldwide scale — secure, reliable, optimized for the future.</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="container footer-grid">
+    <!-- Navigation -->
+    <nav>
+        <h2>PIRANA</h2>
         <div>
-            <h4>PIRANA</h4>
-            <p>Born To Outperform.</p>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Connect</a>
+            <a href="https://script.google.com/macros/s/AKfycbyWMoH_IGUcgZFiGLrfqitdlJWxAXR9FrwKg2Gsw4Budl_fYqBcFfAfil5G1uqAuhyNcA/exec">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to PIRANA</h1>
+        <p>Engineering Intelligence. Powering the Future.</p>
+        <a href="https://script.google.com/macros/s/AKfycbyWMoH_IGUcgZFiGLrfqitdlJWxAXR9FrwKg2Gsw4Budl_fYqBcFfAfil5G1uqAuhyNcA/exec" class="btn-primary">Employee Login</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About PIRANA</h2>
+        <p>
+            PIRANA is a next-generation technology powerhouse building elite, innovation-driven ecosystems across
+            AI, data intelligence, automation, digital transformation, and enterprise solutions.  
+            Designed to push boundaries, PIRANA is shaped to compete globally with the most advanced companies of the modern world.
+        </p>
+    </section>
+
+    <!-- Social Section -->
+    <section id="contact">
+        <h2>Connect With Us</h2>
+
+        <div class="social-icons">
+            <a href="https://youtube.com/@pirana.global?si=0GuZE5qv2fH7U5Qj" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+            </a>
+            <a href="https://www.instagram.com/pirana.global?igsh=MTA1ZGd6MHYyZGJtcw==" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+            </a>
+            <a href="https://x.com/PiranaGlobal" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png">
+            </a>
         </div>
 
-        <div>
-            <h4>Explore</h4>
-            <ul>
-                <li>About</li>
-                <li>Services</li>
-                <li>Products</li>
-                <li>Careers</li>
-            </ul>
-        </div>
+        <br><br>
+        <h3>Email Contacts</h3>
+        <p>CEO: <a href="mailto:connect.pirana+ceo@gmail.com">connect.pirana+ceo@gmail.com</a></p>
+        <p>HR: <a href="mailto:connect.pirana+hr@gmail.com">connect.pirana+hr@gmail.com</a></p>
 
-        <div>
-            <h4>Contact</h4>
-            <p>Email: connect.pirana@gmail.com</p>
-        </div>
-    </div>
+    </section>
 
-    <p class="bottom-note">© 2025 PIRANA Global. All rights reserved.</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 PIRANA Global. All Rights Reserved.</p>
+        <p>Designed for excellence. Built for the future.</p>
+    </footer>
 
 </body>
 </html>
