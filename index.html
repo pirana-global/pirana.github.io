@@ -3,135 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIRANA | Official Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #ffffff;
-            color: #222;
-        }
-
-        header {
-            background: #0f0f0f;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        #about {
-            background: #ffffff;
-        }
-
-        #contact {
-            background: #f5f7fa;
-        }
-
-        .btn-login {
-            background: #1a73e8;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 18px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .btn-login:hover {
-            background: #1667d6;
-        }
-
-        /* Social Icons */
-        .social-icons img {
-            width: 45px;
-            margin: 12px;
-            transition: 0.3s;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
-
-        footer {
-            padding: 30px;
-            background: #0f0f0f;
-            color: #fff;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-    </style>
+    <title>PIRANA | Born To Outperform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>PIRANA</h1>
-        <p>Engineering Intelligence. Powering the Future.</p>
-    </header>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About PIRANA</h2>
-        <p>
-            PIRANA is a next-generation technology powerhouse creating powerful solutions in
-            AI, automation, data intelligence, research, and digital transformation.
-        </p>
-
-        <a class="btn-login" 
-           href="https://script.google.com/macros/s/AKfycbyWMoH_IGUcgZFiGLrfqitdlJWxAXR9FrwKg2Gsw4Budl_fYqBcFfAfil5G1uqAuhyNcA/exec">
-           Employee Login Portal
-        </a>
-    </section>
-
-    <!-- CONTACT / SOCIAL SECTION -->
-    <section id="contact">
-        <h2>Connect With PIRANA</h2>
-
-        <!-- Social Icons -->
-        <div class="social-icons">
-            <!-- YouTube -->
-            <a href="https://youtube.com/@pirana.global?si=0GuZE5qv2fH7U5Qj" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" 
-                     alt="YouTube">
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/pirana.global?igsh=MTA1ZGd6MHYyZGJtcw==" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
-                     alt="Instagram">
-            </a>
-
-            <!-- Twitter / X -->
-            <a href="https://x.com/PiranaGlobal" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png"
-                     alt="Twitter X">
-            </a>
+<header>
+    <div class="container navbar">
+        <div class="nav-brand">
+            <img src="assets/logo.png" alt="PIRANA Logo">
+            <span>PIRANA</span>
         </div>
 
-        <!-- Emails -->
-        <br><br>
-        <h3>Email Contacts</h3>
-        <p>CEO: <a href="mailto:connect.pirana+ceo@gmail.com">connect.pirana+ceo@gmail.com</a></p>
-        <p>HR: <a href="mailto:connect.pirana+hr@gmail.com">connect.pirana+hr@gmail.com</a></p>
-    </section>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 PIRANA Global. All Rights Reserved.</p>
-    </footer>
+<!-- HERO SECTION -->
+<section class="hero container">
+    <div class="hero-text">
+        <h1>Accelerating Intelligence. Redefining Performance.</h1>
+        <p>PIRANA is a next-generation global technology powerhouse building premium AI systems, automation platforms, and futuristic digital solutions.</p>
+
+        <a href="services.html" class="btn btn-primary">Explore Services</a>
+        <a href="careers.html" class="btn btn-outline">Join Us</a>
+
+        <!-- ⭐ Employee Login Button Added Here -->
+        <br><br>
+        <a href="https://script.google.com/macros/s/AKfycbyWMoH_IGUcgZFiGLrfqitdlJWxAXR9FrwKg2Gsw4Budl_fYqBcFfAfil5G1uqAuhyNcA/exec" 
+           class="btn btn-primary"
+           style="background:#1a73e8; margin-top:10px;">
+           Employee Login Portal
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/logo.png" width="250">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container">
+    <h2>Why PIRANA?</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Cutting-Edge Innovation</h3>
+            <p>Advanced AI-driven capabilities built with global-grade performance benchmarks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Elite Engineering</h3>
+            <p>We craft systems that challenge industry giants with unmatched precision and speed.</p>
+        </div>
+
+        <div class="card">
+            <h3>Global Mindset</h3>
+            <p>Built for worldwide scale — secure, reliable, optimized for the future.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-grid">
+        <div>
+            <h4>PIRANA</h4>
+            <p>Born To Outperform.</p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>CEO: <a href="mailto:connect.pirana+ceo@gmail.com">connect.pirana+ceo@gmail.com</a></p>
+            <p>HR: <a href="mailto:connect.pirana+hr@gmail.com">connect.pirana+hr@gmail.com</a></p>
+
+            <!-- ⭐ Social Media Icons -->
+            <div style="margin-top:15px;">
+                <a href="https://youtube.com/@pirana.global?si=0GuZE5qv2fH7U5Qj" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="32" alt="YouTube">
+                </a>
+
+                <a href="https://www.instagram.com/pirana.global?igsh=MTA1ZGd6MHYyZGJtcw==" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="32" alt="Instagram">
+                </a>
+
+                <a href="https://x.com/PiranaGlobal" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" width="32" alt="Twitter X">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p class="bottom-note">© 2025 PIRANA Global. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
